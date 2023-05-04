@@ -1,6 +1,6 @@
 # Flutter responsive dashboard/adminpanel UI
 
-Supports for Mobile/Web/Windows/Mac/Linux apps.
+Supports for Mobile/Web/Windows/Mac/Linux app.
 
 Live demo:
 UI reference: https://dribbble.com/shots/20572883-Fitness-Dashboard-UI-Design  
