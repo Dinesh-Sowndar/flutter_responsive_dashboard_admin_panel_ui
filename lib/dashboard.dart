@@ -13,10 +13,11 @@ class DashBoard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         key: _scaffoldKey,
-        drawer: SizedBox(width: 250, child: Menu(scaffoldKey: _scaffoldKey)),
-        endDrawer: SizedBox(
+        drawer:!Responsive.isDesktop(context) ? SizedBox(width: 250,
+        child: Menu(scaffoldKey: _scaffoldKey)) :null,
+        endDrawer:Responsive.isMobile(context) ? SizedBox(
             width: MediaQuery.of(context).size.width * 0.8,
-            child: const Profile()),
+            child: const Profile()) : null,
         body: SafeArea(
           child: Row(
             children: [
